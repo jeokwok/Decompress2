@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--small botton color-->
+    <color name="btn_small">#ff0</color>
+
+    <!--big botton color-->
+    <color name="btn_big">#f0f</color>
+
+</resources>

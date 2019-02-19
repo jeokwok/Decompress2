@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#666">
+        <TextView
+            android:id="@+id/tv_apptetle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Decompress (99)"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="25dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+
+<!--字体滚动跑马灯效果 自定义控件的实现方式-->
+    <com.exmper.administrator.decompress2.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静女其姝，俟我于城隅,爱而不见，搔首踟蹰. 知我者，谓我心忧；不知我者，谓我何求。悠悠苍天，此何人哉？"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever">
+    </com.exmper.administrator.decompress2.FocusTextView>
+
+<!--字体滚动跑马灯效果的原始XML文件实现-->
+   <!-- <TextView
+        android:text="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmxxxxxxxx"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="1dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />-->
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:background="#888">
+    </View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#888">
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#888">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/btn_chat"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/tv_chat_textview"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="chat"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#888">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/btn_out"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/tv_out_textview"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="out"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#888">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/btn_acme"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/tv_acme_textview"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="acme"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#888">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/btn_story"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/tv_story_textview"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="story"
+                android:textColor="#000"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="#888">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/btn_set"
+            android:layout_width="74dp"
+            android:layout_height="50dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_set_imageview"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/tv_set_textview"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:text="set"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

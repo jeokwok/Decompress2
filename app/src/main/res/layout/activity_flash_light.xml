@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p01"
+    android:id="@+id/parentView">
+
+    <ImageButton
+        android:textColor="#009000"
+        android:background="@android:color/transparent"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btn_toggle"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:text="exit"
+        android:textColor="#009000"
+        android:background="@android:color/transparent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_more1"
+        android:layout_below="@+id/btn_toggle" />
+
+    <Button
+        android:text=" *** "
+        android:textColor="#009000"
+        android:background="@android:color/transparent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_more"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:textOff="open"
+        android:textOn="close"
+        android:background="@drawable/p50"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_toggle"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/btn_more"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/btn_sos"
+        android:background="@drawable/p10sos"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/btn_toggle"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+

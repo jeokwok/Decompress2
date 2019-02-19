@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="isa"
+        >
+        <!--入场动画 渐入anim条目-->
+        <item name="android:windowEnterAnimation">@anim/digin</item>
+        <item name="android:windowExitAnimation">@anim/digout</item>
+    </style>
+
+</resources>

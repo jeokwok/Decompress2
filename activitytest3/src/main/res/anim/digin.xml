@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="2000"
+    android:shareInterpolator="true"
+    android:interpolator="@android:anim/bounce_interpolator">
+    <!--上面2行弹出对话框 实现弹弹球 视觉效果-->
+    <translate android:fromYDelta="-150%p"
+               android:toYDelta="0"></translate>
+
+</set>

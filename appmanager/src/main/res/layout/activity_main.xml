@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+     android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmanager.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <GridView
+            android:listSelector="@color/colorAccent"
+            android:verticalSpacing="20dp"
+            android:horizontalSpacing="10dp"
+            android:padding="5dp"
+            android:id="@+id/gv_gridview"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </GridView>
+
+        <ListView
+            android:id="@+id/lv_listview"
+            android:dividerHeight="2dp"
+            android:listSelector="@color/colorAccent"
+            android:divider="#000"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageButton
+            android:onClick="button1click"
+            android:background="@drawable/btn_selector"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/btn_button1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/btn_button2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
