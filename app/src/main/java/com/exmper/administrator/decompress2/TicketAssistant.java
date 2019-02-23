@@ -260,7 +260,7 @@ public class TicketAssistant extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-     /*解析返回的字符*/
+     /*解析返回的字符*/ 新建解析JSON字符 方法 showresultJSON() 未upload
     private void showResult(final  String s) {
         runOnUiThread(new Runnable() {
             @Override
