@@ -1,6 +1,6 @@
 # Decompress2
 ## 主界面screenshot
-![]()
+![](https://github.com/jeokwok/Decompress2/blob/master/Screenshot_2019-02-24-18-52-25-577_com.exmper.adm.png)
 ## activitytest3
 
 ## APP
