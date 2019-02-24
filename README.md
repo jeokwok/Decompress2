@@ -1,5 +1,5 @@
 # Decompress2
-## 主界面screenshot
+## 主界面screenshot 练习Android开发基础APP
 ![](https://github.com/jeokwok/Decompress2/blob/master/Screenshot_2019-02-24-18-52-25-577_com.exmper.adm.png)
 ## activitytest3
 
