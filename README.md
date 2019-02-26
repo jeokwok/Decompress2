@@ -1,4 +1,4 @@
-# Decompress2 （中文说明[中文说明](https://github.com/jeokwok/Decompress2/blob/master/Screenshot_2019-02-24-18-52-25-577_com.exmper.adm.png)）
+# Decompress2 （[中文说明](https://github.com/jeokwok/Decompress2/blob/master/Screenshot_2019-02-24-18-52-25-577_com.exmper.adm.png)）
    An Android library that XXX. You may use it in your Android apps provided that you cite this project and include the license in your app.
 ## 主界面screenshot 练习Android开发基础APP
 ![](https://github.com/jeokwok/Decompress2/blob/master/Screenshot_2019-02-24-18-52-25-577_com.exmper.adm.png)
