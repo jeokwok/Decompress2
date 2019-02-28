@@ -268,7 +268,10 @@ public class TicketAssistant extends AppCompatActivity implements View.OnClickLi
                 mTop.setText( s);
                try {
                    JSONObject json = new JSONObject(s);
+                  
+                   json.getJsonArray("data").getJSONObject(0).getJsonArray("task_photo");
                    JSONArray json1 = json.getJSONArray(data);
+                   
                    //JSONObject json1 = json.getJSONObject("data");
                    //String saa = json1.getString("map");
 
