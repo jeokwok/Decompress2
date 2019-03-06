@@ -17,3 +17,5 @@
 ## APPmanager
 
 1.应用演示
+
+app中ticket
