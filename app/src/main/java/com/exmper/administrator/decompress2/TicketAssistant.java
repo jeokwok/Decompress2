@@ -280,26 +280,11 @@ public class TicketAssistant extends AppCompatActivity implements View.OnClickLi
 
                    JSONArray array = new JSONArray(s);
                    for(int i = 0; i<array.length(); i++)
-                   {
-
-                       
+                   {                   
                        JSONObject ob = (JSONObject) array.get(i);
                        String info = ob.getString("result");
                        mWeatherType.setText(info);
-
-
                    }
-
-
-
-
-
-                   //JSONArray jsonArray = new JSONObject("data").getJSONObject("map").getJSONArray("result");
-                   //for(int i = 0; i < jsonArray.length();i++)
-                   //{
-                     // jsonArray.getString(i);
-                  //     System.out.println(i);
-                 //  }
 
                   // JSONObject jsonObject = new JSONObject(s).getJSONObject("data");
 
