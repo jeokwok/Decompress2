@@ -53,8 +53,6 @@ public class OneActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data1);
         //设置适配器
 
-
-
     }
     void oneclick(View view){
         Intent intent = new Intent(OneActivity.this,TwoActivity.class);
