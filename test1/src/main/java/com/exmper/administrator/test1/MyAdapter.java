@@ -16,6 +16,8 @@ public class MyAdapter extends BaseAdapter{
     private Context mContext;
     private List<User> mDatas;
     private LayoutInflater layoutInflater;
+    
+    private ViewHolder mViewHolder;
 
     public MyAdapter(Context mContext, List<User> mDatas) {
         this.mContext = mContext;
@@ -40,13 +42,22 @@ public class MyAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = layoutInflater.inflate(R.layout.custom_item1,parent, false);
+        if(converView == null){
+           View view = layoutInflater.inflate(R.layout.custom_item1,parent, false);
+            mViewHolder = new ViewHolder();
+            mViewHolder.setText();
+        }
 
         TextView textView = (TextView) view.findViewById(R.id.tv1);
 
         User user =getItem(position);
         textView.setText(user.getmName());
 
-        return view;
+        return converView;
     }
+}
+
+class ViewHolder{
+    TextView textView;
+    
 }
