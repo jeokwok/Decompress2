@@ -45,19 +45,20 @@ public class MyAdapter extends BaseAdapter{
         if(converView == null){
            View view = layoutInflater.inflate(R.layout.custom_item1,parent, false);
             mViewHolder = new ViewHolder();
-            mViewHolder.setText();
+            mViewHolder.textView = (ViewHolder)view .findViewById(R.id.tv1)
         }
 
-        TextView textView = (TextView) view.findViewById(R.id.tv1);
+        //TextView textView = (TextView) view.findViewById(R.id.tv1);
 
         User user =getItem(position);
-        textView.setText(user.getmName());
+       // textView.setText(user.getmName());
+        mViewHolder.textView.setText(user.getmName());
 
         return converView;
     }
 }
 
-class ViewHolder{
+static class ViewHolder{
     TextView textView;
     
 }
