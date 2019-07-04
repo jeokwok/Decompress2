@@ -42,10 +42,31 @@ public class MyAdapter extends BaseAdapter{
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        
+          ViewHolder holder = null;
+    if(convertView == null){
+        convertView = LayoutInflater.from(mContext).inflate(R.layout.item_list_animal,parent,false);
+        holder = new ViewHolder();
+        holder.img_icon = (ImageView) convertView.findViewById(R.id.img_icon);
+        holder.txt_aName = (TextView) convertView.findViewById(R.id.txt_aName);
+        holder.txt_aSpeak = (TextView) convertView.findViewById(R.id.txt_aSpeak);
+        convertView.setTag(holder);   //将Holder存储到convertView中
+    }else{
+        holder = (ViewHolder) convertView.getTag();
+    }
+    holder.img_icon.setBackgroundResource(mData.get(position).getaIcon());
+    holder.txt_aName.setText(mData.get(position).getaName());
+    holder.txt_aSpeak.setText(mData.get(position).getaSpeak());
+    return convertView;
+        
+        
+        
+        
         if(converView == null){
            View view = layoutInflater.inflate(R.layout.custom_item1,parent, false);
             mViewHolder = new ViewHolder();
-            mViewHolder.textView = (ViewHolder)view .findViewById(R.id.tv1)
+            TextView textView = (TextView)view .findViewById(R.id.tv1)
+            mViewHolder.textView = textView.getTag();
         }
 
         //TextView textView = (TextView) view.findViewById(R.id.tv1);
